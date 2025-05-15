@@ -1,0 +1,63 @@
+# Created by JetBrains .gitignore template
+
+# IntelliJ project files
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+replay_pid*
+
+# Gradle files
+.gradle/
+build/
+
+# Eclipse files (if ever imported)
+*.classpath
+*.project
+*.settings/
+
+# MacOS files
+.DS_Store
+
+# Windows image file caches
+Thumbs.db
+
+# Linux trash folder which might appear on any partition or disk
+.Trash-*
+
+# Spring Boot specific
+target/
+
+# JetBrains Rider
+.idea/
+
+# VSCode (if used with Java extensions)
+.vscode/
+
+# Local environment config
+.env
+*.env
