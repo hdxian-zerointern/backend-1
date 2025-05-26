@@ -1,0 +1,42 @@
+plugins {
+    id 'java'
+    id 'war' // war 패키징을 사용하므로 포함
+    id 'org.springframework.boot' version '3.3.8'
+    id 'io.spring.dependency-management' version '1.1.4'
+}
+
+group = 'com.zerobase'
+version = '0.0.1-SNAPSHOT'
+description = 'fastlms'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.springframework.boot:spring-boot-starter-mail'
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+
+    providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
+
+    runtimeOnly 'com.h2database:h2'
+
+    developmentOnly 'org.springframework.boot:spring-boot-devtools'
+
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}
